@@ -1,0 +1,122 @@
+*{
+    color:#ffb6b6;
+    font-size: medium;
+    background-color: #40f2ff;
+    margin: auto;
+     
+}
+/*Corpo da pagina HOME*/
+body{
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+/*Menu*/
+#menu li{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri;
+   display: inline;
+   padding: 15px;
+   
+         
+}
+#menu li a{
+    text-decoration:none;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: #bf99ca
+}
+
+/*Titulos da pagina Home e Contato*/
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+    margin: 12px;
+    color: #fa75a1;
+    
+}
+
+
+/*Foto* Home*/
+img{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px; 
+    opacity: 1;
+    border: 5px solid #bf99ca;
+}
+
+/*Mapa* Contato*/
+iframe{
+    display: flex;
+    justify-content: center;
+    border: 6px solid #bf99ca;
+    padding: 20px; 
+}
+
+/*Paragrafo "sobre sabrina" e rodapé*/
+ p {
+    justify-content: center;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 8px 22px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fa75a1;
+    color: #ffffff;
+    font-family: Aldrich, sans-serif;
+    margin: 16px 0px;
+    border: 5px solid #ffc5e9;
+    display: flex;
+  
+}
+
+/*Redes sociais rodapé*/
+.rede_s{
+   
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+.conteiner{
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+/*Formulário*/
+
+
+.formulario{
+    color: #fa75a1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    display:flex;
+   
+}
+.caixa{
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+     
+   
+
+}
+button{
+    background-color: #ff44ef;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 12px;
+
+}
