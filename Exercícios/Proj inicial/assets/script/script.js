@@ -1,4 +1,4 @@
-let nome = window.document.getElementById('nome');
+let nome = document.querySelector('#nome');
 let email = document.querySelector('#email');
 let assunto = document.querySelector('#assunto');
 let nomeOk=false;
@@ -6,46 +6,44 @@ let emailOk=false;
 let assuntoOk=false;
 let mapa = document.querySelector('#mapa')
 
-nome.style.width='100%';
-email.style.width='100%';
 
 function validNome(){
-    let txtNome = document.querySelector('txtNome')
+    let txtNome = document.querySelector('#txtNome')
     if (nome.value.length < 3) {
         txtNome.innerHTML = "Nome Inválido"
         txtNome.style.color = "red"   
     } else {
         txtNome.innerHTML = "Nome Válido"
         txtNome.style.color = "green"  
-        nomeOK = true
+        nomeOk = true
     }
 }
 
 function validEmail(){
-    let txtEmail = document.querySelector('txtEmail')
+    let txtEmail = document.querySelector('#txtEmail')
     if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
         txtEmail.innerHTML = "E-mail Inválido"
         txtEmail.style.color = "red"   
     } else {
         txtEmail.innerHTML = "E-mail Válido"
         txtEmail.style.color = "green"  
-        emailOK = true
+        emailOk = true
     }
 }
 
 function validAssunto(){
-    let txtAssunto = document.querySelector('txtAssunto')
+    let txtAssunto = document.querySelector('#txtAssunto')
     if (assunto.value.length >= 100) {
         txtAssunto.innerHTML = "O texto utrapassa a quantidade de caracteres permitida"
         txtAssunto.style.color = "red"   
         txtAssunto.style.display = "none"  
     } else {
         txtAssunto.style.display = "none"  
-        assuntoOK = true
+        assuntoOk = true
     }
 }
 function enviar(){
-    if(nomeOK == true && emailOK == true && assuntoOk == true){
+    if(nomeOk == true && emailOk == true && assuntoOk == true){
         alert("Formulário enviado com sucesso!")
     } else{
         alert("Preencha o formulário corretamente")
