@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Contato</title>
 </head>
-<body>
+<body class="contato">
     <ul id="menu"> 
         <li>
            <a href="index.html"> Home </a>
@@ -15,22 +15,54 @@
             <a href="contato.html"> Contato </a>
         </li>
       </ul>
-
-      <h1 class="titulo">Entre em contato comigo </h1>
+      <br>
+      <hr>
+      <h1 class="titulo">Entre em contato: </h1>
       
-      <form class="conteiner">
+      <form class="cont">
           <label class="formulario" for="nome">Nome: </label><br/>
-          <input class="caixa" type= "text".id= "nome" />
+          <input class="caixa" type= "text".id= "nome" onkeyup="validNome()">
+          <div id="txtNome"></div>
+          <br>
+          <br>
           <label class="formulario" for="email">E-mail: </label><br/>
-          <input class="caixa" type= "email".id= "email" />
+          <input class="caixa" type= "email".id= "email" onkeyup="validEmail()">
+          <div id="txtEmail"></div>
+          <br> 
+          <br>
           <label class="formulario" for="assunto">Assunto: </label><br/>
-          <textarea class="caixa" type= "assunto".id= "assunto" cols= "150" rows= "8">  </textarea>
-          <a href = "mailto:brina.gandra@gmail.com" subject="subject text"><button>Enviar</button></a>
+          <textarea class="caixa" type= "assunto".id= "assunto" cols= "70" rows= "8" onkeyup="validAssunto">  </textarea>
+          <div id="txtAssunto"></div>
+          <button onclick="enviar">Enviar</button></a>
       </form>
 
      
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9697559607002!2d-46.484262185546655!3d-23.425459662471553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8af96ef1d5f5%3A0xc6186cc0412319eb!2sAeroporto%20Internacional%20de%20Guarulhos%2C%20Terminal%202!5e0!3m2!1spt-BR!2sbr!4v1644434909167!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.0756190097177!2d-46.42113528502482!3d-23.421635384752502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce89c22173e8eb%3A0xaaeee235cb50f04e!2sR.%20Sen.%20Teot%C3%B4nio%20Vil%C3%A9la%20-%20Jardim%20Pres.%20Dutra%2C%20Guarulhos%20-%20SP%2C%2007174-030!5e0!3m2!1spt-BR!2sbr!4v1644528434382!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="mapa"></iframe>
     
+      <hr>
+      <footer>
+        <div class="conteiner">
+          <a href = "mailto:brina.gandra@gmail.com" subject="subject text">
+          <img class="rede_s" src="./assets/arroba.png" alt="email">
+        </a>
+          <a href="https://github.com/Brinamg">
+          <img class="rede_s" src="./assets/github.png" alt="github">
+        </a>
+          <a href="https://instagram.com/Sabrinahmg">
+          <img class="rede_s" src="./assets/instagram.png" alt="instagram">
+        </a>
+          <a href="https://www.linkedin.com/in/sabrinamouragandra/">
+          <img class="rede_s" src="./assets/linkedin.png" alt="linkedln">
+        </a>
+        </div>
+  
+        <p> Todos os direitos reservados: Sabrna Moura Gandra 📎 </p>
+  
+      </footer>
+
+      <script src="assets/script/script.js"></script>
 </body>
+
+
+
 </html>

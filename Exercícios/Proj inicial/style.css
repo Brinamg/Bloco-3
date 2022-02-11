@@ -5,12 +5,13 @@
     margin: auto;
      
 }
-/*Corpo da pagina HOME*/
+/*Corpo da pagina*/
 body{
     margin-top: 20px;
     margin-left: 75px;
     margin-right: 75px;
 }
+
 /*Menu*/
 #menu li{
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri;
@@ -57,7 +58,8 @@ iframe{
     display: flex;
     justify-content: center;
     border: 6px solid #bf99ca;
-    padding: 20px; 
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
 
 /*Paragrafo "sobre sabrina" e rodapé*/
@@ -84,12 +86,24 @@ iframe{
     width: 50px;
     height: 50px;
 }
-
+/*Rede social*/
 .conteiner{
     justify-content: center;
     display: flex;
     flex-flow: row;
     align-items: center;
+
+}
+
+
+/*Formulario*/
+.cont{
+    justify-content: center;
+    display:list-item;
+    flex-flow:row;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 240px;
 }
 
 /*Formulário*/
@@ -98,25 +112,55 @@ iframe{
 .formulario{
     color: #fa75a1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-items: center;
-    display:flex;
+    margin-top: 50px;
+    font-size: large;
+    font-weight: bold;
+   
+  
    
 }
 .caixa{
     color: #000000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ffffff;
-    align-items: center;
-    display: flex;
-     
-   
-
 }
+
 button{
     background-color: #ff44ef;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
     margin: 12px;
+    display: flex;
+
+}
+button:hover{
+    background-color: #bf99ca;
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    #menu{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #40f2ff;
+    }
+
+    #menu {
+        width: 90%;
+    }
+
+    .titulo {
+        width: 100%;
+    }
+    iframe{
+           display: block;
+    }
 
 }
