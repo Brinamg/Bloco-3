@@ -21,7 +21,7 @@ function validNome(){
 
 function validEmail(){
     let txtEmail = document.querySelector('#txtEmail')
-    if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
+    if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1){
         txtEmail.innerHTML = "E-mail Inválido"
         txtEmail.style.color = "red"   
     } else {
