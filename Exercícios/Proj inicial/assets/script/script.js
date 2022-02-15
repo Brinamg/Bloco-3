@@ -1,10 +1,10 @@
-let nome = document.querySelector('#nome');
-let email = document.querySelector('#email');
-let assunto = document.querySelector('#assunto');
-let nomeOk=false;
-let emailOk=false;
-let assuntoOk=false;
-let mapa = document.querySelector('#mapa')
+let nome = document.getElementById('nome');
+let email = document.getElementById('email');
+let assunto = document.getElementById('assunto');
+let nomeOk = false;
+let emailOk = false;
+let assuntoOk = false;
+let mapa = document.getElementById('mapa')
 
 
 function validNome(){
